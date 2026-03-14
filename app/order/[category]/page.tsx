@@ -24,8 +24,8 @@ export default async function OrderPage({
   return (
     <div>
       <Heading>Elige tu pedido</Heading>
-      <div className="mb-5 mt-2 h-px bg-gray-300 " />
-      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-3 items-start p-1">
+      <div className="mb-5 mt-2 h-px bg-gray-300" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 items-start p-1">
         {products.map((product) => (
             <ProductCard key={product.id} product={product} />
         ))}

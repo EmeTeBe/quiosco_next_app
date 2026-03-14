@@ -12,7 +12,7 @@ export default function AddProductButton({ product }: AddProductButtonProps) {
   return (
     <button
       type="button"
-      className=" text-slate-600 w-full mt-3 p-3 shadow shadow-slate-500 ring-1 ring-slate-400 uppercase font-semibold cursor-pointer rounded-2xl hover:shadow-inner  transition-all"
+      className=" text-slate-600 w-full text-sm mt-3 py-1 shadow shadow-slate-500 ring-1 ring-slate-400 uppercase font-medium cursor-pointer rounded-2xl hover:shadow-inner transition-all"
       onClick={() => addToOrder(product)}
     >
       agregar
