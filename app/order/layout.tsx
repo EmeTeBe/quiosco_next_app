@@ -1,5 +1,5 @@
+import CartManager from "@/components/order/CartManager";
 import OrderSidebar from "@/components/order/OrderSidebar";
-import OrderSummary from "@/components/order/OrderSummary";
 import Logo from "@/components/ui/Logo";
 import ToastNotification from "@/components/ui/ToastNotification";
 
@@ -12,7 +12,8 @@ export default function OrderLayout({
       <OrderSidebar />
       <main className="w-full p-3 md:p-5">{children}</main>
 
-      <OrderSummary />
+      <CartManager />
+
       <ToastNotification />
     </div>
   );
